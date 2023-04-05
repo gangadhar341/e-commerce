@@ -1,0 +1,167 @@
+/* .navbar-container {
+  background-color: #333;
+  overflow: auto;
+}
+.navbar-container h1 {
+  display: inline;
+  margin: auto 10px;
+   padding-top: 10px
+  font-size: 20px;
+  color: #fff;
+}
+.navbar-container h1:hover {
+  color: aquamarine;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-container ul {
+  list-style: none;
+  float: right;
+}
+.navbar-container ul li {
+  float: left;
+  padding: 10px;
+  color: #fff;
+}
+.navbar-container ul li a {
+  display: block;
+  cursor: pointer;
+  background-color: #333;
+}
+
+.navbar-container ul li a:hover {
+  background-color: rgb(238, 158, 9);
+}
+/* @media all and (max-width: 480px) {
+  .nav-container {
+    flex-direction: column;
+    min-height: 40px;
+    width: 100%;
+  }
+  .nav-container .h1 {
+    width: 100%;
+    padding-top: 15px;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+  }
+  .nav-list {
+    list-style-type: none;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    display: none;
+  }
+  .nav-list li {
+    display: block;
+    margin: 0px;
+    padding: 10px;
+    border-top: 1px solid #fff;
+  }
+  .nav-container a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .active {
+    display: block;
+  }
+}
+ */
+
+.nav-container {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  font-size: 18px;
+}
+.nav-list {
+  list-style: none;
+  float: right;
+}
+.nav-list li {
+  display: inline-block;
+  padding: 20px 10px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+/* .title:hover {
+  color: aquamarine;
+} */
+a:hover {
+  color: orange;
+}
+.bars {
+  background-color: #fff;
+  width: 18px;
+  height: 3px;
+  margin-bottom: 4px;
+}
+.menu {
+  display: none;
+}
+/* .search {
+  border-radius: 10px;
+  background-color: #333;
+} */
+.search-bar {
+  display: flex;
+  background-color: #333;
+}
+input {
+  height: 50px;
+  width: 300px;
+}
+
+@media all and (max-width: 700px) {
+  .nav-container {
+    flex-direction: column;
+    min-height: 40px;
+    width: 100%;
+  }
+  .nav-container .title {
+    width: 100%;
+    padding-top: 15px;
+  }
+  .search {
+    display: none;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+  }
+  .nav-list {
+    list-style-type: none;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    display: none;
+  }
+  .nav-list li {
+    display: block;
+    margin: 0px;
+    padding: 10px;
+    border-top: 1px solid #fff;
+  }
+  .nav-container a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .active {
+    display: block;
+  }
+}

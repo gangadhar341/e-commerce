@@ -1,0 +1,60 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar-container">
+      <h1>e-commerce</h1>
+      <app-search class="search"></app-search>
+
+      <ul>
+        <li><a>Home</a></li>
+        <li><a>WishList</a></li>
+        <li><a>Cart</a></li>
+        <li><a>Profile</a></li>
+      </ul>
+       <div class="menu" (click)="showMenu()">
+        <div class="bars"></div>
+        <div class="bars"></div>
+        <div class="bars"></div>
+      </div> 
+    </nav>
+  </body>
+</html>
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="nav-container">
+      <div class="title">
+        <h1>e-commerce</h1>
+      </div>
+      <!-- <app-search class="search" ></app-search> -->
+      <div class="search-bar">
+        <input type="search" name="search" />
+      </div>
+      <ul class="nav-list" [class]="{ active: isActive }">
+        <li class="items"><a href="#">Home</a></li>
+        <li class="items"><a href="#">WishList</a></li>
+        <li class="items"><a href="#">Cart</a></li>
+        <li class="items"><a href="#">Profile</a></li>
+      </ul>
+      <div class="menu" (click)="showMenu()">
+        <div class="bars"></div>
+        <div class="bars"></div>
+        <div class="bars"></div>
+      </div>
+    </nav>
+  </body>
+</html>
